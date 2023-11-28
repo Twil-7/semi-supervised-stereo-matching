@@ -12,5 +12,6 @@ In this paper, we propose a Semi-supervised Stereo Matching Framework (SSMF), i.
 
 Comprehensive experimental results show that the proposed framework enables to largely improve the disparity accuracy and robustness. Moreover, it also demonstrates competitive performance in cross-domain scenarios. Among all published methods as of August 2023, it achieves 1st on KITTI 2012 benchmark and 4th on KITTI 2015 benchmark.
 
-![image](https://github.com/Twil-7/semi-supervised-stereo-matching/blob/main/result.png)
-
+<div align=center>
+<img src="https://github.com/Twil-7/semi-supervised-stereo-matching/blob/main/result.png" width="435" height="235" alt="pipeline"/><br/>
+</div>
