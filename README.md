@@ -6,7 +6,7 @@ One major problem is the scarcity of ground truth disparities. Unlike image clas
 
 In this paper, we propose a Semi-supervised Stereo Matching Framework (SSMF), i.e., a continuous self-training pipeline involving both teacher model and student model. The proposed framework combines the consistency regularization with the entropy minimization to effectively utilize the unlabeled data in large quantities. To the best of our knowledge, this is the first semi-supervised learning framework for stereo matching, which exhibits impressive performance on both accuracy and robustness.
 
-![image](https://github.com/Twil-7/semi-supervised-stereo-matching/blob/main/pipeline.png)
+![image](https://github.com/Twil-7/semi-supervised-stereo-matching/blob/main/pipeline.png width="200" height="300")
 
 Comprehensive experimental results show that the proposed framework enables to largely improve the disparity accuracy and robustness. Moreover, it also demonstrates competitive performance in cross-domain scenarios. Among all published methods as of August 2023, it achieves 1st on KITTI 2012 benchmark and 4th on KITTI 2015 benchmark.
 
