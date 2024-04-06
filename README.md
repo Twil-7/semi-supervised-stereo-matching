@@ -15,14 +15,23 @@ Comprehensive experimental results show that the proposed framework enables to l
 
 ## 2. Code
 The whole code is divided into two parts: teacher model training and student model training. 
+
 (1) teacher model training
+
 Taking the sceneflow dataset and gwcnet model as examples, for the initial teacher model training, we include the following four steps:
+
 Step 1: divide the training set and the test set. For the training set data, we divide it into labeled data and unlabeled data according to 1:8.
+
 Step 2: train the teacher model on the labeled training set.
+
 Step 3: test the performance of teacher model.
+
 Step 4: use the trained teacher model to generate pseudo labels on the unlabeled training set.
 
 (2) student model training
+
 Taking the sceneflow dataset and gwcnet model as examples, for the student model training, we include the following two steps:
+
 Step 1: train the student model on the mixed labeled and pseudo-labeled training set.
+
 Step 2: test the performance of student model.
