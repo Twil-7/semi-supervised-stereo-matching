@@ -22,6 +22,7 @@ Taking the sceneflow dataset and gwcnet model as examples, for the initial teach
 
 Step 1: divide the training set and the test set. For the training set data, we divide it into labeled data and unlabeled data.
 ```
+# Please remember to change the filepath = "/ssd2/xufudong_dataset/sceneflow/" to yours.
 python annotation.py
 ```
 Step 2: train the teacher model on the labeled training set.
@@ -31,12 +32,14 @@ python train.py
 
 Step 3: test the performance of teacher model.
 ```
+# Please remember to change the weight_path = "0098_3.59319_0.32577_0.96966_GwcNet_sceneflow.tar" to yours.
 python test.py
 python test_visualize.py
 ```
 Step 4: use the trained teacher model to generate pseudo labels on the unlabeled training set.
 
 ```
+# Please remember to check the validity of save_name.
 pseudo1_make.py
 pseudo1_txt.py
 pseudo1_show.py
