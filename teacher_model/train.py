@@ -15,8 +15,8 @@ from models import __models__, model_loss
 from utils import *
 
 
-# os.environ['CUDA_VISIBLE_DEVICES'] = "0, 1, 2, 3"
-os.environ['CUDA_VISIBLE_DEVICES'] = "6"
+os.environ['CUDA_VISIBLE_DEVICES'] = "0, 1, 2, 3"
+# os.environ['CUDA_VISIBLE_DEVICES'] = "6"
 
 # 设置torch.backends.cudnn.benchmark=True，会让内置的cuDNN的auto-tuner自动寻找最适合当前配置的高效算法，为整个网络的每个
 # 卷积层搜索最适合它的卷积实现算法，进而实现网络的加速.
@@ -31,8 +31,8 @@ parser.add_argument('--trainlist', default="model_data/labeled.txt", help='train
 parser.add_argument('--testlist', default="model_data/test.txt", help='testing list')
 
 parser.add_argument('--lr', type=float, default=0.001, help='base learning rate')
-parser.add_argument('--batch_size', type=int, default=4, help='training batch size')
-parser.add_argument('--test_batch_size', type=int, default=2, help='testing batch size')
+parser.add_argument('--batch_size', type=int, default=16, help='training batch size')
+parser.add_argument('--test_batch_size', type=int, default=8, help='testing batch size')
 parser.add_argument('--epochs', type=int, default=100, help='number of epochs to train')
 parser.add_argument('--lrepochs', type=str, default="50:10", help='the epochs to decay lr: the downscale rate')
 parser.add_argument('--logdir', default="logs/", help='the directory to save logs and checkpoints')
