@@ -18,9 +18,9 @@ class SceneFlowDatset(Dataset):
         right_images = [x[1] for x in splits]
         disp_images = [x[2] for x in splits]
         
-        left_images = left_images[:500]
-        right_images = right_images[:500]
-        disp_images = disp_images[:500]
+        # left_images = left_images[:500]
+        # right_images = right_images[:500]
+        # disp_images = disp_images[:500]
         return left_images, right_images, disp_images
 
     def load_image(self, filename):
