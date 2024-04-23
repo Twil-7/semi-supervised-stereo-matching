@@ -48,8 +48,19 @@ pseudo1_show.py
 
 (2) student model training
 
-Taking the sceneflow dataset and gwcnet model as examples, for the student model training, we include the following two steps:
+Taking the sceneflow dataset and gwcnet model as examples, for the student model training, we include the following three steps:
 
-Step 1: train the student model on the mixed labeled and pseudo-labeled training set.
+Step 1: move "model_data/" and "Pseudo_stage1/" from the teacher_model file to the student_model file.
+
+Step 2: train the student model on the mixed labeled and pseudo-labeled training set.
+
+```
+python train.py
+```
 
 Step 2: test the performance of student model.
+
+```
+# Please remember to change the weight_path = "0098_3.59319_0.32577_0.96966_GwcNet_sceneflow.tar" to yours.
+python test.py
+```
