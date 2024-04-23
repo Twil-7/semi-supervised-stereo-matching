@@ -14,7 +14,14 @@ In this paper, we propose a Semi-supervised Stereo Matching Framework (SSMF), i.
 
 Comprehensive experimental results show that the proposed framework enables to largely improve the disparity accuracy and robustness. Moreover, it also demonstrates competitive performance in cross-domain scenarios. Among all published methods as of August 2023, it achieves 1st on KITTI 2012 benchmark and 4th on KITTI 2015 benchmark. The code is being sorted out and will be released soon.
 
-## 2. Code
+
+## 2. Dataset
+In this code, we use the Sceneflow dataset and Gwcnet model as the baseline of the semi supervised stereo matching framework.
+SceneFlow Dataset: https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html
+GwcNet network: https://github.com/xy-guo/GwcNet
+
+
+## 3. Code
 The whole code is divided into two parts: teacher model training and student model training. 
 
 (1) teacher model training
