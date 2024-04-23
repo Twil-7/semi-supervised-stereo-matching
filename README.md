@@ -50,7 +50,11 @@ pseudo1_show.py
 
 Taking the sceneflow dataset and gwcnet model as examples, for the student model training, we include the following three steps:
 
-Step 1: move "model_data/" and "Pseudo_stage1/" from the teacher_model file to the student_model file.
+Step 1: move the "model_data/" and "Pseudo_stage1/" files from the teacher_model file to the student_model file.
+
+```
+cp -r path1 path2
+```
 
 Step 2: train the student model on the mixed labeled and pseudo-labeled training set.
 
