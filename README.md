@@ -16,7 +16,7 @@ Comprehensive experimental results show that the proposed framework enables to l
 
 
 ## 2. Dataset
-In this code, we use the Sceneflow dataset and Gwcnet model as the baseline of the semi supervised stereo matching framework.
+In this code, we use the Sceneflow dataset and Gwcnet model as the baseline of the semi-supervised stereo matching framework.
 
 SceneFlow Dataset: https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html
 
@@ -72,7 +72,7 @@ Step 2: train the student model on the mixed labeled and pseudo-labeled training
 python train.py
 ```
 
-Step 2: test the performance of student model.
+Step 3: test the performance of student model.
 
 ```
 # Please remember to change the weight_path = "0098_3.59319_0.32577_0.96966_GwcNet_sceneflow.tar" to yours.
